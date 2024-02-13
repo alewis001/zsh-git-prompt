@@ -66,7 +66,7 @@ function _zsh_kubectl_prompt_precmd() {
 
     # Set environment variable if context is not set
     if ! context="$("$binary" config current-context 2>/dev/null)"; then
-        ZSH_KUBECTL_PROMPT="current-context is not set"
+        ZSH_KUBECTL_PROMPT="???"
         return 1
     fi
 
